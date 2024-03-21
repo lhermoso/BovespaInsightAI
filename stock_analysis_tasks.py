@@ -109,8 +109,7 @@ class StockAnalysisTasks:
         health, market sentiment, and qualitative data from
         Fundamentalist data.
 
-        Make sure to include a section that shows insider 
-        trading activity, and upcoming events like earnings.
+        Make sure to include a section that shows upcoming events like earnings.
         
         Also make sure to return the stock ticker.
 
@@ -126,8 +125,8 @@ class StockAnalysisTasks:
                     and fundamentalist data. The report should provide a clear investment stance on the selected 
                     company, supported by evidence and analysis. It should cover upcoming earnings events, 
                     and present a strategic investment recommendation. The report must be well-formatted, 
-                    visually appealing, and structured as a PDF to guide the client's investment decisions and must 
-                    be written in Brazilian Portuguese""")
+                    visually appealing, and structured as a PDF to guide the client's investment decisions and at the 
+                    end translate it to Brazilian Portuguese""")
 
                     )
 
