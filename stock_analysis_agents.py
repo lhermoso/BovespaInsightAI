@@ -7,8 +7,6 @@ from crewai_tools import (
     SerperDevTool,
     WebsiteSearchTool
 )
-from langchain_google_genai import GoogleGenerativeAI
-from google.generativeai.types.safety_types import HarmBlockThreshold, HarmCategory
 quote_tool = QuoteTool()
 search_tool = SerperDevTool()
 web_rag_tool = WebsiteSearchTool()
@@ -18,14 +16,7 @@ dividends_tool = DividendsTools()
 income_tool = IncomeStatementTool()
 financial_data_tool = FinancialDataTool()
 key_stats_tool = DefaultKeyStatisticsTool()
-safety_settings = {
-    HarmCategory.HARM_CATEGORY_UNSPECIFIED: HarmBlockThreshold.BLOCK_NONE,
-    HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE,
-    HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_NONE,
-    HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_NONE,
-    HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: HarmBlockThreshold.BLOCK_NONE,
-}
-llm = GoogleGenerativeAI(model="gemini-pro", verbose=True, temperature=0.1, google_api_key=os.getenv("GOOGLE_API_KEY"))
+
 
 
 class StockAnalysisAgents:
@@ -50,7 +41,7 @@ class StockAnalysisAgents:
                 financial_data_tool,
                 key_stats_tool
             ],
-            #llm=llm,
+
             memory=True
         )
 
@@ -79,7 +70,7 @@ class StockAnalysisAgents:
                 financial_data_tool,
                 key_stats_tool
             ],
-            #llm=llm,
+
             memory=True
         )
 
@@ -104,7 +95,7 @@ class StockAnalysisAgents:
                 financial_data_tool,
                 key_stats_tool
             ],
-            #llm=llm,
+
             memory=True
         )
 
@@ -129,6 +120,6 @@ class StockAnalysisAgents:
                 financial_data_tool,
                 key_stats_tool
             ],
-            #llm=llm,
+
             memory=True
         )
