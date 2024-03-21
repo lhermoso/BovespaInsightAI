@@ -84,6 +84,7 @@ class StockAnalysisTasks:
                 flags or areas of opportunity that could influence investment decisions. 
                 Ensure the report is well-structured, easy to understand, and includes the 
                 company's stock ticker for reference.
+                {self.__tip_section()}
             """),
             agent=agent,
             expected_output=dedent("""
