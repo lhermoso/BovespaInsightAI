@@ -1,7 +1,3 @@
-Para criar um `README.md` para o seu projeto que inclui instruções sobre o preenchimento do arquivo `.env-example` e a instalação dos pacotes usando `requirements.txt`, você pode usar o seguinte modelo:
-
----
-
 # BovespaInsightAI
 
 BovespaInsightAI é uma plataforma inovadora de análise financeira que se destaca por sua dedicação exclusiva ao mercado de ações brasileiro, a Bovespa. 
